@@ -1,0 +1,126 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Manage Doctor Details</h2>
+  
+    <!-- Loading state -->
+    <div *ngIf="isLoading" class="alert alert-info">
+      <span>Loading doctor details...</span>
+    </div>
+  
+    <!-- Error message -->
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Success message -->
+    <div *ngIf="successMessage" class="alert alert-success">
+      {{ successMessage }}
+    </div>
+  
+    <!-- Form for Adding/Updating Doctor Details -->
+    <form [formGroup]="doctorForm" (ngSubmit)="onSubmit()" class="mt-4">
+      <div class="form-group">
+        <label for="name">Doctor's Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          formControlName="name"
+          placeholder="Enter doctor's name"
+          required
+        />
+      </div>
+  
+      <div class="form-group mt-3">
+        <label for="specialization">Specialization</label>
+        <input
+          type="text"
+          id="specialization"
+          class="form-control"
+          formControlName="specialization"
+          placeholder="Enter specialization"
+          required
+        />
+      </div>
+  
+      <div class="form-group mt-3">
+        <label for="experience">Years of Experience</label>
+        <input
+          type="number"
+          id="experience"
+          class="form-control"
+          formControlName="experience"
+          placeholder="Enter years of experience"
+          required
+        />
+      </div>
+  
+      <div class="form-group mt-3">
+        <label for="availability">Available Hours</label>
+        <input
+          type="text"
+          id="availability"
+          class="form-control"
+          formControlName="availability"
+          placeholder="Enter available hours"
+          required
+        />
+      </div>
+  
+      <div class="form-group mt-3">
+        <label for="contact">Contact</label>
+        <input
+          type="text"
+          id="contact"
+          class="form-control"
+          formControlName="contact"
+          placeholder="Enter contact number"
+          required
+        />
+      </div>
+  
+      <div class="form-group mt-3">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          formControlName="email"
+          placeholder="Enter email address"
+          required
+        />
+      </div>
+  
+      <div class="mt-4 d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary">Save Doctor Details</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="onReset()"
+          *ngIf="doctorForm.dirty || doctor"
+        >
+          Reset
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="onDelete()"
+          *ngIf="doctor"
+        >
+          Delete Doctor
+        </button>
+      </div>
+    </form>
+  
+    <!-- Doctor Details Display (Read) -->
+    <div *ngIf="doctor" class="card mt-5">
+      <div class="card-body">
+        <h5 class="card-title">{{ doctor.name }}</h5>
+        <p><strong>Specialization:</strong> {{ doctor.specialization }}</p>
+        <p><strong>Years of Experience:</strong> {{ doctor.experience }} years</p>
+        <p><strong>Available Hours:</strong> {{ doctor.availability }}</p>
+        <p><strong>Contact:</strong> {{ doctor.contact }}</p>
+        <p><strong>Email:</strong> {{ doctor.email }}</p>
+      </div>
+    </div>
+  </div>
+  

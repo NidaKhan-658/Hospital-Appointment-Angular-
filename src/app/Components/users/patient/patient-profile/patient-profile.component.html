@@ -1,0 +1,175 @@
+<div class="container mt-5">
+  <div class="card shadow-lg p-4 mb-5 bg-white rounded" style="max-width: 900px; margin: auto;">
+    <div class="row g-0">
+      <!-- Image Section -->
+      <div class="col-md-4 text-center">
+        <img
+          src="../../../../../assets/images/health-report.png"
+          class="img-fluid rounded-circle mb-4"
+          alt="Patient Avatar"
+          style="width: 150px; height: 150px; object-fit: cover;"
+        />
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title mb-4">Patient Profile</h2>
+          <form (ngSubmit)="addPatientProfile()" [formGroup]="patientForm">
+            <div class="row">
+              <!-- Left Column -->
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+                  <label for="patientName">Patient Name:</label>
+                  <input
+                    type="text"
+                    id="patientName"
+                    formControlName="patientName"
+                    class="form-control"
+                    required
+                  />
+                  <div *ngIf="submitted && patientForm.get('patientName')?.invalid" class="text-danger">
+                    Patient name is required.
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="age">Age:</label>
+                  <input
+                    type="number"
+                    id="age"
+                    formControlName="age"
+                    class="form-control"
+                    required
+                    min="0"
+                  />
+                  <div *ngIf="submitted && patientForm.get('age')?.invalid" class="text-danger">
+                    Age is required.
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="gender">Gender:</label>
+                  <select
+                    id="gender"
+                    formControlName="gender"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" disabled>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div *ngIf="submitted && patientForm.get('gender')?.invalid" class="text-danger">
+                    Gender is required.
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="contact">Contact Number:</label>
+                  <input
+                    type="tel"
+                    id="contact"
+                    formControlName="contact"
+                    class="form-control"
+                    required
+                    pattern="^[0-9]{7,15}$"
+                  />
+                  <div *ngIf="submitted && patientForm.get('contact')?.invalid" class="text-danger">
+                    Please enter a valid contact number (7-15 digits).
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="address">Address:</label>
+                  <textarea
+                    id="address"
+                    formControlName="address"
+                    class="form-control"
+                    required
+                  ></textarea>
+                  <div *ngIf="submitted && patientForm.get('address')?.invalid" class="text-danger">
+                    Address is required.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column -->
+              <div class="col-md-6">
+                <div class="form-group mb-3">
+                  <label for="country">Country:</label>
+                  <input
+                    type="text"
+                    id="country"
+                    formControlName="country"
+                    class="form-control"
+                    required
+                  />
+                  <div *ngIf="submitted && patientForm.get('country')?.invalid" class="text-danger">
+                    Country is required.
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="pincode">Pincode:</label>
+                  <input
+                    type="text"
+                    id="pincode"
+                    formControlName="pincode"
+                    class="form-control"
+                    pattern="^[0-9]{5,10}$"
+                  />
+                  <div *ngIf="submitted && patientForm.get('pincode')?.invalid" class="text-danger">
+                    Please enter a valid pincode (5-10 digits).
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="department">Department:</label>
+                  <select
+                    id="department"
+                    formControlName="department"
+                    class="form-control"
+                    required
+                  >
+                    <option value="">Select a department</option>
+                    <option value="Internal Medicine">Internal Medicine</option>
+                    <option value="Surgical">Surgical</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                  </select>
+                  <div *ngIf="submitted && patientForm.get('department')?.invalid" class="text-danger">
+                    Please select a department.
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="fileUpload">Upload Document:</label>
+                  <input
+                    type="file"
+                    id="fileUpload"
+                    (change)="fileUpload($event)"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="summary">Message or Summary:</label>
+                  <textarea
+                    id="summary"
+                    formControlName="summary"
+                    class="form-control"
+                    placeholder="Add any additional message or health summary here..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3 w-100">
+              Update Profile
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

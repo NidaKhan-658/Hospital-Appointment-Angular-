@@ -1,0 +1,72 @@
+.appointment-dashboard {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #0D6F76;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0D6F76;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .create-btn, .edit-btn, .delete-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-btn {
+    background-color: #ECDF8B;
+    color: #0D6F76;
+    margin-bottom: 15px;
+  }
+  
+  .edit-btn {
+    background-color: #0D6F76;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 768px) {
+    .appointment-dashboard {
+      padding: 10px;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  }
+  

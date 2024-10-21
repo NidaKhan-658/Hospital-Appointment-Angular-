@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Appointment Details</h2>
+  <div *ngIf="appointmentDetails" class="card">
+    <div class="card-body">
+      <h5 class="card-title">Appointment ID: {{ appointmentDetails.id }}</h5>
+      <p class="card-text"><strong>Patient:</strong> {{ appointmentDetails.patientName }}</p>
+      <p class="card-text"><strong>Doctor:</strong> {{ appointmentDetails.doctorName }}</p>
+      <p class="card-text"><strong>Date:</strong> {{ appointmentDetails.date | date:'medium' }}</p>
+      <p class="card-text"><strong>Status:</strong> {{ appointmentDetails.status }}</p>
+      <p class="card-text"><strong>Notes:</strong> {{ appointmentDetails.notes }}</p>
+    </div>
+  </div>
+  <div *ngIf="!appointmentDetails" class="alert alert-info mt-3">
+    No appointment details available.
+  </div>
+  <button class="btn btn-primary mt-3" routerLink="/appointments/list">Back to List</button>
+</div>

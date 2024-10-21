@@ -1,0 +1,58 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Report Generation</h2>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Appointment Statistics</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Total Appointments: <span class="badge bg-primary">120</span></li>
+            <li class="list-group-item">Completed Appointments: <span class="badge bg-success">85</span></li>
+            <li class="list-group-item">Cancelled Appointments: <span class="badge bg-danger">15</span></li>
+            <li class="list-group-item">Pending Appointments: <span class="badge bg-warning">20</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">User Statistics</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Total Users: <span class="badge bg-primary">500</span></li>
+            <li class="list-group-item">Doctors: <span class="badge bg-info">50</span></li>
+            <li class="list-group-item">Patients: <span class="badge bg-success">450</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Generate Custom Report</h5>
+          <form>
+            <div class="mb-3">
+              <label for="reportType" class="form-label">Report Type</label>
+              <select class="form-select" id="reportType">
+                <option selected>Choose report type</option>
+                <option value="1">Appointment Summary</option>
+                <option value="2">User Activity</option>
+                <option value="3">Doctor Performance</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="dateRange" class="form-label">Date Range</label>
+              <input type="date" class="form-control" id="dateRange" placeholder="Select date range">
+            </div>
+            <button type="submit" class="btn btn-primary">Generate Report</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

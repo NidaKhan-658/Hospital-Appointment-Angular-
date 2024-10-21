@@ -1,0 +1,77 @@
+<div class="container mt-4">
+    <h2 class="mb-4">Patient Dashboard</h2>
+    
+    <!-- Search and Filter Section -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search by ID or Name"
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="onSearch()"
+        />
+      </div>
+      <div class="col-md-4">
+        <select
+          class="form-control"
+          [(ngModel)]="selectedDepartment"
+          (change)="filterByDepartment()"
+        >
+          <option value="">All Departments</option>
+          <option *ngFor="let department of departments" [value]="department">
+            {{ department }}
+          </option>
+        </select>
+      </div>
+      <div class="col-md-2 text-right">
+        <button class="btn btn-primary w-100" (click)="addNewPatient()">Add New Patient</button>
+      </div>
+    </div>
+  
+    <!-- Total Number of Patients -->
+    <p>Total Patients: {{ totalPatients }}</p>
+  
+    <!-- Patients Table -->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Department</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of paginatedPatients">
+          <td>{{ patient.id }}</td>
+          <td>{{ patient.patientName }}</td>
+          <td>{{ patient.age }}</td>
+          <td>{{ patient.gender }}</td>
+          <td>{{patient.department}}</td>
+          <td>
+            <button class="btn btn-sm btn-warning" (click)="editPatient(patient.id!)">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="deletePatient(patient.id!)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Pagination Controls -->
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item" [class.disabled]="currentPage === 1">
+          <a class="page-link" href="#" (click)="previousPage()">Previous</a>
+        </li>
+        <li class="page-item" *ngFor="let page of paginationRange" [class.active]="currentPage === page">
+          <a class="page-link" href="#" (click)="goToPage(page)">{{ page }}</a>
+        </li>
+        <li class="page-item" [class.disabled]="currentPage === totalPages">
+          <a class="page-link" href="#" (click)="nextPage()">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  

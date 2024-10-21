@@ -1,0 +1,105 @@
+<div class="container mt-5">
+    <div class="card shadow p-4 mb-5 bg-white rounded">
+      <h2 class="card-title">Patient Detail</h2>
+  
+      <!-- Patient Details Form -->
+      <form [formGroup]="patientForm" (ngSubmit)="updatePatient()">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="patientName">Patient Name:</label>
+              <input
+                type="text"
+                id="patientName"
+                formControlName="patientName"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': patientForm.get('patientName')?.invalid && patientForm.get('patientName')?.touched }"
+              />
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="age">Age:</label>
+              <input
+                type="number"
+                id="age"
+                formControlName="age"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': patientForm.get('age')?.invalid && patientForm.get('age')?.touched }"
+              />
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="gender">Gender:</label>
+              <select id="gender" formControlName="gender" class="form-control">
+                <option value="" disabled>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="contact">Contact Number:</label>
+              <input
+                type="tel"
+                id="contact"
+                formControlName="contact"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': patientForm.get('contact')?.invalid && patientForm.get('contact')?.touched }"
+              />
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="address">Address:</label>
+              <textarea id="address" formControlName="address" class="form-control"></textarea>
+            </div>
+          </div>
+  
+          <!-- Right Column -->
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <label for="department">Department:</label>
+              <input
+                type="text"
+                id="department"
+                formControlName="department"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': patientForm.get('department')?.invalid && patientForm.get('department')?.touched }"
+              />
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="country">Country:</label>
+              <input
+                type="text"
+                id="country"
+                formControlName="country"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': patientForm.get('country')?.invalid && patientForm.get('country')?.touched }"
+              />
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="pincode">Pincode:</label>
+              <input
+                type="text"
+                id="pincode"
+                formControlName="pincode"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': patientForm.get('pincode')?.invalid && patientForm.get('pincode')?.touched }"
+              />
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="summary">Summary:</label>
+              <textarea id="summary" formControlName="summary" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary w-100" [disabled]="patientForm.invalid">Update Patient</button>
+      </form>
+    </div>
+  </div>
+  

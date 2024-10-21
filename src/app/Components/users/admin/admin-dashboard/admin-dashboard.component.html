@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Admin Dashboard</h2>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Quick Statistics</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Total Appointments: <span class="badge bg-primary">{{statistics.totalAppointments}}</span></li>
+            <li class="list-group-item">Total Users: <span class="badge bg-success">{{statistics.totalUsers}}</span></li>
+            <li class="list-group-item">Doctors: <span class="badge bg-info">{{statistics.doctors}}</span></li>
+            <li class="list-group-item">Patients: <span class="badge bg-warning">{{statistics.patients}}</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Quick Actions</h5>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" routerLink="/admin/report">Generate Reports</button>
+            <button class="btn btn-success" routerLink="/doctor/dashboard">Manage Doctors</button>
+            <button class="btn btn-info" routerLink="/patient/dashboard">Manage Patients</button>
+            <button class="btn btn-warning" routerLink="/appointment/list">View Appointments</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row ">
+    <div class="col-md-12">
+      <div class="card ">
+        <div class="card-body">
+          <h5 class="card-title">Recent Activity</h5>
+          <ul class="list-group">
+            <li class="list-group-item">New doctor registered: Dr. Emily Johnson</li>
+            <li class="list-group-item">Appointment cancelled: Patient ID 1234</li>
+            <li class="list-group-item">Report generated: Monthly Summary</li>
+            <li class="list-group-item">New patient registered: John Doe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

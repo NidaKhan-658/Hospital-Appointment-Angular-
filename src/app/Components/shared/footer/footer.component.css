@@ -1,0 +1,52 @@
+footer {
+  font-size: 14px;
+  background-color: #ecdf8b;
+  font-size: 14px;
+  background-color: #ecdf8b;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+ 
+}
+
+footer h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+footer a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0a1189;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-unstyled li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  footer .col-md-4 {
+    text-align: center;
+  }
+  
+}
+
+@media (max-height: 700px) {
+    footer {
+      position: static;
+    }
+}
+

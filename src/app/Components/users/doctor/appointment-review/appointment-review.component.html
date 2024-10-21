@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Appointment Review</h2>
+  
+    <!-- Loading indicator -->
+    <div *ngIf="isLoading">
+      <p>Loading appointment details...</p>
+    </div>
+  
+    <div *ngIf="appointment" class="card">
+      <div class="card-body">
+        <h5 class="card-title">Patient Information</h5>
+        <p><strong>Name:</strong> {{ appointment.patientName }}</p>
+        <p><strong>Date:</strong> {{ appointment.date }}</p>
+        <p><strong>Time:</strong> {{ appointment.time }}</p>
+        <p><strong>Department:</strong> {{ appointment.department }}</p>
+      </div>
+    </div>
+  
+    <!-- Review Form -->
+    <form [formGroup]="reviewForm" (ngSubmit)="onSubmit()" class="mt-4">
+      <div class="form-group">
+        <label for="diagnosis">Diagnosis</label>
+        <textarea
+          class="form-control"
+          id="diagnosis"
+          formControlName="diagnosis"
+          rows="3"
+          required>
+        </textarea>
+        <div *ngIf="reviewForm.get('diagnosis')?.invalid && reviewForm.get('diagnosis')?.touched" class="text-danger">
+          Diagnosis is required.
+        </div>
+      </div>
+  
+      <div class="form-group mt-3">
+        <label for="notes">Doctor's Notes</label>
+        <textarea
+          class="form-control"
+          id="notes"
+          formControlName="notes"
+          rows="5"
+          required>
+        </textarea>
+        <div *ngIf="reviewForm.get('notes')?.invalid && reviewForm.get('notes')?.touched" class="text-danger">
+          Notes are required.
+        </div>
+      </div>
+  
+      <!-- File Upload -->
+      <div class="form-group mt-3">
+        <label for="report">Upload Medical Reports</label>
+        <input type="file" id="report" (change)="onFileSelect($event)" class="form-control" />
+        <div *ngIf="fileError" class="text-danger">
+          {{ fileError }}
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary mt-3" [disabled]="reviewForm.invalid">
+        Submit Review
+      </button>
+    </form>
+  </div>
+  

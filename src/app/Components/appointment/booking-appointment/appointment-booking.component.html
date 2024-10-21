@@ -1,0 +1,105 @@
+<!-- Appointment Start -->
+<section id="book-appointment" class="container-fluid my-5 py-5">
+    <div class="container py-5">
+      <div class="row gx-5">
+        <!-- Instructions Section -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="mb-4">
+            <h5 class="d-inline-block  text-uppercase border-bottom border-5">Appointment Booking</h5>
+            <h1 class="display-4">How to Fill Out the Appointment Form</h1>
+          </div>
+          <p class="text-black mb-5">To book your appointment with Cure and Care, follow these steps:</p>
+          <ol class="text-black mb-5">
+            <li>Choose your preferred department from the dropdown.</li>
+            <li>Select an available doctor.</li>
+            <li>Enter your full name and email for communication.</li>
+            <li>Pick a suitable date and time for the appointment.</li>
+            <li>Click "Make An Appointment" to submit your request.</li>
+          </ol>
+          <p class="text-black mb-5">We'll confirm your appointment via email. Contact us if you have any questions.</p>
+        </div>
+  
+        <!-- Form Section -->
+        <div class="col-lg-6">
+          <div class="bg-white text-center rounded p-5">
+            <h1 class="mb-4">Book An Appointment</h1>
+            <form [formGroup]="appointmentForm" (ngSubmit)="addAppointment()">
+              <div class="row g-3">
+                <!-- Department Field -->
+                <div class="col-12 col-sm-6">
+                  <select class="form-select bg-light border-0" formControlName="department" style="height: 55px;">
+                    <option value="" disabled selected>Choose Department</option>
+                    <option value="Internal Medicine">Internal Medicine</option>
+                    <option value="Surgical">Surgical</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                  </select>
+                  <span class="text-danger" *ngIf="appointmentForm.get('department')?.invalid && appointmentForm.get('department')?.touched">
+                    Department is required
+                  </span>
+                </div>
+  
+                <!-- Doctor Field -->
+                <div class="col-12 col-sm-6">
+                  <select class="form-select bg-light border-0" formControlName="doctor" style="height: 55px;">
+                    <option value="" disabled selected>Select Doctor</option>
+                    <option value="Dr. John Doe">Dr. John Doe</option>
+                    <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+                    <option value="Dr. Michael Brown">Dr. Michael Brown</option>
+                  </select>
+                </div>
+  
+                <!-- Patient Name -->
+                <div class="col-12 col-sm-6">
+                  <input type="text" class="form-control bg-light border-0" formControlName="patientName" placeholder="Your Name" style="height: 55px;">
+                  <span class="text-danger" *ngIf="appointmentForm.get('patientName')?.invalid && appointmentForm.get('patientName')?.touched">
+                    Name is required
+                  </span>
+                </div>
+  
+                <!-- Email -->
+                <div class="col-12 col-sm-6">
+                  <input type="email" class="form-control bg-light border-0" formControlName="email" placeholder="Your Email" style="height: 55px;">
+                  <span class="text-danger" *ngIf="appointmentForm.get('email')?.invalid && appointmentForm.get('email')?.touched">
+                    Valid email is required
+                  </span>
+                </div>
+  
+                <!-- Date -->
+                <div class="col-12 col-sm-6">
+                  <input type="date" class="form-control bg-light border-0" formControlName="date" style="height: 55px;">
+                  <span class="text-danger" *ngIf="appointmentForm.get('date')?.invalid && appointmentForm.get('date')?.touched">
+                    Date is required
+                  </span>
+                </div>
+  
+                <!-- Time -->
+                <div class="col-12 col-sm-6">
+                  <input type="time" class="form-control bg-light border-0" formControlName="time" style="height: 55px;">
+                  <span class="text-danger" *ngIf="appointmentForm.get('time')?.invalid && appointmentForm.get('time')?.touched">
+                    Time is required
+                  </span>
+                </div>
+  
+                <!-- Symptoms -->
+                <div class="col-12">
+                  <textarea class="form-control bg-light border-0" rows="5" formControlName="symptoms" placeholder="Symptoms"></textarea>
+                </div>
+  
+                <!-- File Upload -->
+                <div class="col-12">
+                  <input type="file" class="form-control bg-light border-0" formControlName="file" style="height: 55px;">
+                </div>
+  
+                <!-- Submit Button -->
+                <div class="col-12">
+                  <button class="btn btn-primary w-100 py-3" type="submit" [disabled]="appointmentForm.invalid">Make An Appointment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Appointment End -->
+  

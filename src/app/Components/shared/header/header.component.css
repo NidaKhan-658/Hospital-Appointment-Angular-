@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0d6f76!important;
+  padding: 10px 0;
+  
+}
+
+
+.navbar-brand {
+  font-weight: 600;
+  color: #3498db;
+}
+
+.offcanvas {
+  background-color: #ecf0f3;
+}
+
+.offcanvas-title {
+  font-weight: 600;
+  text-decoration: none;
+  color: #31344b;
+}
+
+.nav-link {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: yellow;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 5px;
+}
+
+.nav-link i {
+  width: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  margin: 0 10px;
+  color: #31344b;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3498db;
+  transform: scale(1.2);
+}
+
+@media (max-width: 991px) {
+  .offcanvas {
+    max-width: 300px;
+  }
+}
+
+/* Custom styles for neumorphic effect */
+.neumorphic {
+  background: #ecf0f3;
+  box-shadow: 
+    -8px -8px 12px #ffffff,
+    8px 8px 12px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.neumorphic:hover {
+  box-shadow: 
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Apply neumorphic effect to navbar and offcanvas */
+.navbar, .offcanvas {
+  background: #ecf0f3;
+  box-shadow: 
+    -8px -8px 12px #ffffff,
+    8px 8px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Custom button style */
+.btn-neumorphic {
+  background: #ecf0f3;
+  box-shadow: 
+    -5px -5px 10px #ffffff,
+    5px 5px 10px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #31344b;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-neumorphic:hover {
+  box-shadow: 
+    -2px -2px 5px #ffffff,
+    2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: #3498db;
+}
+
+/* Add smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}

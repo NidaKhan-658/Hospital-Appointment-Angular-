@@ -1,0 +1,927 @@
+{
+  "appointments": [
+    {
+      "id": "e6f31fec-4173-42c4-afe6-4f9268ae0d86",
+      "patientName": "Edited Patient Name",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "updatedAt": "2024-10-22T20:41:07.174Z",
+      "status": "Scheduled"
+    },
+    {
+      "id": "27c354e0-13cc-4329-8a01-6bda1918f926",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "9874",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "2a292d61-1e28-4dd3-982c-3222f0a31dd7",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "693e",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "bc2080ae-398a-437c-83f9-a46cea993901",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "285f",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "2898",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "2b2d",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "c384",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "8bbf",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "dc4a",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "c58a",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "7f22",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "0290",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "d706",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "7435",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "0c3e",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "7d13",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "dd1e",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "a3b7",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "1a0a",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "status": "Cancelled"
+    },
+    {
+      "id": "81f2",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "409a",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "8e2f",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "8448",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "7c81",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "a0f8",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "54e6",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "a300",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "39da",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "27cc",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "352e",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "7863",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "ad10",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "e6ae",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "10c4",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "8502",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "407d",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "31c4",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "35b7",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "48fc",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "1415",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "4a1c",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "2026",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "df7f",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "d3b5",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": ""
+    },
+    {
+      "id": "c34c",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "8594",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "43f0",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "839f",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "049c",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "976f",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "5cd4",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "c4ce",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "585d",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "6dc4",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "c0f7",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "0807",
+      "patientName": "ni",
+      "date": "2024-10-17",
+      "time": "14:23",
+      "department": "Internal Medicine",
+      "doctor": "Dr. John Doe",
+      "name": null,
+      "email": "fcf@dfcf.in",
+      "symptoms": null,
+      "file": null
+    },
+    {
+      "id": "057c",
+      "patientName": "",
+      "date": "2024-10-21",
+      "time": "",
+      "department": "",
+      "doctor": "",
+      "name": "",
+      "email": "",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "c57203f8-14b7-4169-8c00-6358892a0095",
+      "patientName": "n",
+      "date": "2024-10-21",
+      "time": "22:30",
+      "department": "Internal Medicine",
+      "doctor": "Dr. Michael Brown",
+      "email": "n@n.in",
+      "symptoms": "",
+      "file": null
+    },
+    {
+      "id": "e43c3469-e43a-4480-95c4-c0ad1b3b9254",
+      "patientName": "test pammi",
+      "date": "2024-10-23",
+      "time": "04:40",
+      "department": "Internal Medicine",
+      "doctor": "Dr. Jane Smith",
+      "email": "pumkiboi@gmail.com",
+      "symptoms": "",
+      "file": null,
+      "status": ""
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "patientName": "John Doe",
+      "age": 30,
+      "gender": "Male",
+      "contact": "1234567890",
+      "address": "123 Main St, Anytown, USA",
+      "summary": "",
+      "fileUpload": null,
+      "department": "surgical",
+      "country": "fd",
+      "pincode": ""
+    },
+    {
+      "0": {
+        "patientName": "test",
+        "age": 41,
+        "gender": "Female",
+        "contact": "91464",
+        "address": "",
+        "country": "qwer",
+        "pincode": "102",
+        "summary": "",
+        "id": 8203
+      },
+      "id": "a114"
+    },
+    {
+      "0": {
+        "patientName": "",
+        "age": null,
+        "gender": "",
+        "contact": "",
+        "address": "",
+        "country": "",
+        "pincode": "",
+        "summary": "",
+        "id": 9245
+      },
+      "id": "8d70"
+    },
+    {
+      "0": {
+        "patientName": "",
+        "age": null,
+        "gender": "",
+        "contact": "",
+        "address": "",
+        "country": "",
+        "pincode": "",
+        "summary": "",
+        "department": "",
+        "id": 4233
+      },
+      "id": "25e1"
+    },
+    {
+      "0": {
+        "patientName": "",
+        "age": null,
+        "gender": "",
+        "contact": "",
+        "address": "",
+        "country": "",
+        "pincode": "",
+        "summary": "",
+        "department": "",
+        "id": 5298
+      },
+      "id": "daae"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "hashed_password_here",
+      "role": "admin",
+      "createdAt": "2023-05-01T00:00:00.000Z",
+      "updatedAt": "2023-05-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "Doctor Smith",
+      "email": "doctor.smith@example.com",
+      "password": "hashed_password_here",
+      "role": "doctor",
+      "createdAt": "2023-05-02T00:00:00.000Z",
+      "updatedAt": "2023-05-02T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "name": "Patient Doe",
+      "email": "patient.doe@example.com",
+      "password": "hashed_password_here",
+      "role": "patient",
+      "createdAt": "2023-05-03T00:00:00.000Z",
+      "updatedAt": "2023-05-03T00:00:00.000Z"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "1",
+      "name": "Dr. John Smith",
+      "specialization": "Cardiology",
+      "experience": 15,
+      "availability": "Mon-Fri, 9AM-5PM",
+      "contact": "+1 (555) 123-4567",
+      "email": "john.smith@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Dr. Emily Johnson",
+      "specialization": "Pediatrics",
+      "experience": 10,
+      "availability": "Tue-Sat, 8AM-4PM",
+      "contact": "+1 (555) 987-6543",
+      "email": "emily.johnson@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Dr. Michael Lee",
+      "specialization": "Orthopedics",
+      "experience": 20,
+      "availability": "Mon-Thu, 10AM-6PM",
+      "contact": "+1 (555) 246-8135",
+      "email": "michael.lee@example.com"
+    }
+  ],
+  "forgotpassword": [
+    {
+      "email": "test@test.com",
+      "id": "4e16"
+    }
+  ],
+  "login": [
+    {
+      "email": "test@test.com",
+      "password": "test",
+      "id": "04b4"
+    },
+    {
+      "id": "73db",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "8609",
+      "email": "test@gmail.com",
+      "password": "789456"
+    },
+    {
+      "id": "266d",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "6a7f",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f2c5",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "ef90",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "9141",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "8939",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "9bfe",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "4d10",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "eb97",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "fb77",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "a8d6",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "register": [
+    {
+      "username": "bastilaraven",
+      "email": "bastilaraven@gmail.com",
+      "password": "123456",
+      "userrole": "admin",
+      "id": "cbf4"
+    },
+    {
+      "id": "868c",
+      "username": "patient",
+      "email": "fcgh@fcg.com",
+      "password": "478956"
+    }
+  ]
+}
